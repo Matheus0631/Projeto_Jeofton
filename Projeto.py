@@ -24,14 +24,14 @@ def calcular_medias(notas):
         #Vai mostrar os resultados.
 def resultados(notas, media):
     print("\n Notas inseridas:", notas)
-    if isinstance(media, str):
+    if isinstance(media, str):      #Vai fazer com que o código não de erro quando não for digitado um número.
         print(media)
 
     else:
         print(f"Média das notas {media:.2f}")
 
 
-def main():
+def main():         #Essa função vai armazenar todas as outras, criando variáveis para armazenar as notas e média.
 
     print("Bem-Vindo ao calculador de médias!\n")
 
@@ -42,6 +42,6 @@ def main():
     resultados(notas_alunos,media_notas)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":          #Vai iniciar o código e puxar a função main com os resultados.
     main()  
 
